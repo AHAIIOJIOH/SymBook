@@ -12,7 +12,6 @@ class ConferenceController extends AbstractController
     #[Route('/', name: 'HomePage')]
     public function index(Request $request): Response
     {
-        dump($request);
         return new Response(<<<EOF
 <html>
     <body>
